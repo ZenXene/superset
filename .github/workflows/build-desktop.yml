@@ -31,7 +31,7 @@ on:
 jobs:
   build-macos:
     name: Build - macOS (${{ matrix.arch }})
-    runs-on: ${{ matrix.arch == 'x64' && 'macos-13' || 'macos-latest' }}
+    runs-on: ${{ matrix.arch == 'x64' && 'macos-13' || 'macos-14' }}
     environment: production
 
     strategy:
