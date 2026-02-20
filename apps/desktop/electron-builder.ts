@@ -122,7 +122,7 @@ const config: Configuration = {
 		target: [
 			{
 				target: "default",
-				arch: ["arm64", "x64"],
+				arch: ["arm64", "x64"], // 新增x64支持
 			},
 		],
 		hardenedRuntime: true,
