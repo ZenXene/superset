@@ -1,0 +1,14 @@
+name: Test Build
+
+on:
+  push:
+    branches: [ build-fix-x64 ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Test Build
+    uses: ./.github/workflows/build-desktop.yml
+    with:
+      channel: canary
+      version_suffix: -test
