@@ -125,6 +125,7 @@ const config: Configuration = {
 				arch: ["arm64", "x64"], // 新增x64支持
 			},
 		],
+    artifactName: `${productName}-${pkg.version}-\${arch}.\${ext}`,
 		hardenedRuntime: true,
 		gatekeeperAssess: false,
 		notarize: true,
